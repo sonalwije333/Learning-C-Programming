@@ -23,39 +23,48 @@ int main() {
     // surfaceArea = 4 * PI * pow(radius, 3);
     // printf("surfaceArea is %.2lf", surfaceArea);
     
-    int dayOfWeek =0;
-    printf("Enter a day of the week (1-7): \n");
-    scanf("%d",&dayOfWeek);
-    
-    switch (dayOfWeek) {
-        case 1:
-            printf("This is Monday");
-            break;
-        case 2:
-            printf("This is Tuesday");
-            break;
-        case 3:
-            printf("This is wednesday");
-            break;
-        case 4:
-            printf("This is Thursday");
-            break;
-        case 5:
-            printf("This is Friday");
-            break;
-        case 6:
-            printf("This is Saturday");
-            break; 
-        case 7:
-            printf("This is Sunday");
-            break;     
-           default:
-            printf("Please only enter a number (1-7)");
-    }
-    
-    
-    
+    // int dayOfWeek =0;
+    // printf("Enter a day of the week (1-7): \n");
+    // scanf("%d",&dayOfWeek);
+    //
+    // switch (dayOfWeek) {
+    //     case 1:
+    //         printf("This is Monday");
+    //         break;
+    //     case 2:
+    //         printf("This is Tuesday");
+    //         break;
+    //     case 3:
+    //         printf("This is wednesday");
+    //         break;
+    //     case 4:
+    //         printf("This is Thursday");
+    //         break;
+    //     case 5:
+    //         printf("This is Friday");
+    //         break;
+    //     case 6:
+    //         printf("This is Saturday");
+    //         break; 
+    //     case 7:
+    //         printf("This is Sunday");
+    //         break;     
+    //        default:
+    //         printf("Please only enter a number (1-7)");
+    // }
+    //
 
+//POINTERS
+
+    int age = 21;
+     int *pAge = &age;
     
+    printf("address of age: %p\n", &age);
+    printf("address of pAge: %p\n", &pAge);
+
+    printf("value of age: %d\n", &age);
+    printf("value at stored address: %d\n", *pAge); //dereferenncing
+
     return 0;
 }
+
